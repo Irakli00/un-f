@@ -1,3 +1,5 @@
+'use strict'
+
 const toggleBTN = document.querySelector(".toggle-js")
 const IPInput = document.querySelector('.IP-input')
 const clearBTN = document.querySelector('.clear-js')
@@ -16,8 +18,11 @@ toggleBTN.addEventListener('click',()=>{
     const recievedCountryEl =ipForm.querySelector('h2')
 
     document.getElementById('instruction-text').style.display='none'
+    console.log(recievedCountryEl)
   
-recievedCountryEl.textContent = data.country
+    // recievedCountryEl.textContent = data.country
+    recievedCountryEl.innerHTML = `<h2>${data.country}</h2>`
+    console.log(recievedCountryEl)
 
     document.querySelector('.region-js').innerHTML=`
     <div class="recieved-region">
@@ -25,6 +30,8 @@ recievedCountryEl.textContent = data.country
     </div>
     `
   }
+
+  console.log(IPInput)
   let IP = IPInput.value
   console.log(IP)
   getDataAndRender(`${apiUrl}${IP}`)
