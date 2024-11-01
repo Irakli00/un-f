@@ -1,5 +1,8 @@
 
-
+:root{
+  --primary-text:#FBD6C1;
+  --main-background:#19191B;
+}
 *{
   box-sizing: border-box;
   padding: 0;
@@ -26,6 +29,14 @@ body{
   gap: 30px;
 }
 
+#add-item-btn,#clear-btn,#toggle-btn{
+  color: var(--primary-text);
+  padding: 10px 24px;
+  background-color: var(--main-background);
+  border: none;
+  border-radius: 8px;
+}
+
 #add-item-btn{
   background-image: linear-gradient(45deg, #E27125,#7C3E14);
   border: none;
@@ -35,22 +46,10 @@ body{
   color: #ffffff;
 }
 
-#clear-btn{
-  color: #FBD6C1;
-  padding: 10px 24px;
-  background-color: #19191B;
-  border: none;
-  border-radius: 8px;
-}
 
 #toggle-btn{
-  background-color: #19191B;
   text-align: center;
-  border-radius: 8px;
-  padding: 10px 24px;
-  color: #FBD6C1;
   width: 100%;
-  border: none;
 }
 
 .center-child{
@@ -68,7 +67,7 @@ body{
 #IP-adress-container{
   position: relative;
   padding: 20px;
-  background-color: #19191B;
+  background-color: var(--main-background);
   border-radius: 12px;
 }
 
@@ -78,17 +77,17 @@ body{
 }
 
 #ip-form input{
-  background-color: #19191B;
+  background-color: var(--main-background);
   padding: 12px;
   font-size: 14px;
   margin-top: 10px;
   border: none;
   width: 100%;
-  color: #FBD6C1;
+  color: var(--primary-text);
 }
 
 #ip-form input::placeholder{
-  color: #FBD6C1;
+  color: var(--primary-text);
 }
 
 #ip-form input h2{
