@@ -1,0 +1,103 @@
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #1E1E1E;
+  color: #FBD6C1;
+}
+
+#container{
+  margin: auto;
+  max-width: 257px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+#primary-btns-container{
+  display: flex;
+  gap: 30px;
+}
+
+#add-item-btn{
+  background-image: linear-gradient(45deg, #E27125,#7C3E14);
+  border: none;
+  padding: 10px 24px;
+  width: 146px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+#clear-btn{
+  color: #FBD6C1;
+  padding: 10px 24px;
+  background-color: #19191B;
+  border: none;
+  border-radius: 8px;
+}
+
+#toggle-btn{
+  background-color: #19191B;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 24px;
+  color: #FBD6C1;
+  width: 100%;
+  border: none;
+}
+
+.center-child{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#instruction-text{
+  font-size: 14px;
+  opacity: 50%;
+  margin-top: 20px; 
+}
+
+#IP-adress-container{
+  position: relative;
+  padding: 20px;
+  background-color: #19191B;
+  border-radius: 12px;
+}
+
+#IP-adress-container >img{
+  position: absolute;
+  right: 10px;
+}
+
+#ip-form input{
+  background-color: #19191B;
+  padding: 12px;
+  font-size: 14px;
+  margin-top: 10px;
+  border: none;
+  width: 100%;
+  color: #FBD6C1;
+}
+
+#ip-form input::placeholder{
+  color: #FBD6C1;
+}
+
+#ip-form input h2{
+font-size: 16px; 
+}
+
+.recieved-region{
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+  margin-top: 16px;
+}
