@@ -20,8 +20,8 @@ toggleBTN.addEventListener('click',()=>{
     document.getElementById('instruction-text').style.display='none'
     console.log(recievedCountryEl)
   
-    // recievedCountryEl.textContent = data.country
-    recievedCountryEl.innerHTML = `<h2>${data.country}</h2>`
+    recievedCountryEl.textContent = data.country
+    // recievedCountryEl.innerHTML = `<h2>${data.country}</h2>`
     console.log(recievedCountryEl)
 
     document.querySelector('.region-js').innerHTML=`
